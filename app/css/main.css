@@ -1,0 +1,113 @@
+﻿/*Start Styling for TicTacToe Board */
+html {
+  background-color: #17212B;
+}
+
+.red {
+  background-color: #F45B69;
+  color: #17212B;
+}
+
+.blue {
+  background-color: #5AB7F4;
+  color: #17212B;
+}
+
+#playerone {
+  float: left;
+  color: #E3EAF2;
+  font-size:  1.5em;
+  font-family: sans-serif;
+  border: 1px solid #31404F;
+  padding: 20px;
+  transition: background-color 1s ease;
+}
+#playertwo {
+  float: right;
+  color: #E3EAF2;
+  font-size:  1.5em;
+  font-family: sans-serif;
+  border: 1px solid #31404F;
+  padding: 20px;
+  transition: background-color 1s ease;
+}
+
+.cell {
+  border: 5px solid #31404F;
+  height: 100px; width: 100px;
+  margin: 10px;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.cell:hover:not(.red, .blue) {
+  background-color: #31404F;
+
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  
+}
+
+.red {
+  background-color: #F45B69;
+  color: #17212B;
+}
+
+.blue {
+  background-color: #5AB7F4;
+  color: #17212B;
+}
+/*End Styling for TicTacToe Board*/
+/*Styling for Overlay Registration Form */
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 50%; /* Full width (cover the whole page) */
+  height: 30%; /* Full height (cover the whole page) */
+  top: 25%; 
+  left: 25%;
+  right: 0;
+  bottom: 0;
+  align-content: center;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+/* End Form Over Styling */
+
+/* Start Styling for Form UI Elements */
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/*End Styling for Form UI Elements */

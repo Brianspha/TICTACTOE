@@ -1,0 +1,23 @@
+{
+  "name": "TICTACTOE",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "test": "embark test"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.3.1"
+  },
+  "dependencies": {
+    "browserify": "^15.2.0",
+    "express": "^4.16.2",
+    "ws": "^4.0.0"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^3.0.3"
+  }
+}
