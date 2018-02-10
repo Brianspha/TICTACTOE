@@ -66,20 +66,43 @@ html {
   position: fixed; /* Sit on top of the page content */
   display: none; /* Hidden by default */
   width: 50%; /* Full width (cover the whole page) */
-  height: 30%; /* Full height (cover the whole page) */
+  height: 40%; /* Full height (cover the whole page) */
   top: 25%; 
   left: 25%;
   right: 0;
   bottom: 0;
   align-content: center;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  background-color: transparent; /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
+  overflow: auto; /*Make overlay container adjust itself in accordance to its contents */
+}
+.center {
+  margin: 0 auto;
+}
+.choose:active,
+#restart:active {
+  background-color: #ccc;  /* Darker color when the button is pressed */
+}
+.choose,
+#restart {
+  border-radius: 0.3em;
+}
+#ChooseXorO {
+  max-width: 420px;
+  text-align: center;  /* Centers h2 and buttons */
+}
+#ChooseXorO h2 {
+  padding: 0 15px;  /* Prevent text from touching the edges of the screen */
+}
+#ChooseXorO button {
+  font-size: 3.4em;
+  padding: 3% 6%;  /* With "%" padding is based on container's width */
+  margin: 0 4%;  /* Create distance between buttons */
 }
 /* End Form Over Styling */
 
 /* Start Styling for Form UI Elements */
-
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -105,9 +128,23 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-div {
+
+
+#form div{
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
 /*End Styling for Form UI Elements */
+
+/*Console log */
+
+.console {
+  background-color: black;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+}
+/*End Console log Styling*/

@@ -39,9 +39,7 @@ function RegisterPlayer(string name, address playerAddress) public  returns(stri
 if (RegisterdPlayers[playerAddress].Registerd) {
 return "Player Already Registered";
 }
-if(RegisteredPlayerCount == 2){
-return "Only Two players can play at a time";
-}
+
 uint[] memory arr1 = new uint[](50);
 uint[] memory arr = new uint[](50);
 var player = Player(playerAddress,name, 0, arr1, true);
@@ -49,12 +47,11 @@ RegisterdPlayers[playerAddress] = player; // address of plyaer is the address of
 if(RegisteredPlayerCount==0){
 P1=player;
 PlayersWhoPlayed[playerAddress]=P1;
-}
-else if(RegisteredPlayerCount ==1){
-P2=player;
+P2=Player(0,"AI", 0, arr1, true);
 PlayersWhoPlayed[playerAddress]=P2;
+RegisteredPlayerCount = 2;
 }
-RegisteredPlayerCount = RegisteredPlayerCount+1;
+SetUpGame();// Setup the game board etc..
 return "Registerd Player Successfully";
 }
 
