@@ -75,7 +75,7 @@ html {
   background-color: transparent; /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
-  overflow: auto; /*Make overlay container adjust itself in accordance to its contents */
+  overflow: hidden; /*Make overlay container adjust itself in accordance to its contents */
 }
 .center {
   margin: 0 auto;
@@ -112,6 +112,10 @@ input[type=text], select {
   border-radius: 4px;
   box-sizing: border-box;
 }
+#textH{
+  font-family: Blippo, fantasy;
+  text-align: center;
+}
 
 input[type=submit] {
   width: 100%;
@@ -128,7 +132,10 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-
+form{
+  overflow:hidden;
+  resize: none;
+}
 
 #form div{
   border-radius: 5px;

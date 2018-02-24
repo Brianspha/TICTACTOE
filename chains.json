@@ -272,5 +272,65 @@
       }
     },
     "name": "development"
+  },
+  "0x67802d432e6021c871228ad1825296dc33c9bc8835ab33a0a3800f7d20b5bcc6": {
+    "contracts": {
+      "0x250df1b8fc0132f2a24920c518cf132ba9128e44dc8f34fa3e6640babcb5de96": {
+        "name": "Game",
+        "address": "0xe36939a3dc76c480f27092781b72519ea7f78f6f"
+      },
+      "0xfc224dac76fef55594cfac5eb0cdc41cb6d18005fe272ec126694ee3d9bf044c": {
+        "name": "Game",
+        "address": "0xb910fc940108ffac914ffd5c9b462c8268da5622"
+      },
+      "0x579c291c5f45cd56caccd7bd07bcc627f99bdc3a6a849e165c7f11c2c7c8d7d0": {
+        "name": "Game",
+        "address": "0x4a8439f809165025d350f4c6376f70613a59fab6"
+      },
+      "0xed33e33e4288b57f693be7db67c39b7a52569de7cbaa6a171577cbdbfd8dee9b": {
+        "name": "Game",
+        "address": "0xcdb31703b991bf2ab63aa8ca6046762fca830afd"
+      },
+      "0x0600e0c0c1a22a9c73214142fd063e41b9a8f0809741d6abf0b2aba4d892e341": {
+        "name": "Game",
+        "address": "0x323702eae7d7d5e183d2f1d69786bbe4dbc9679e"
+      },
+      "0xb24b671fb9d767435a00817564c078d2535dc4771d2f0ff078c36e890470a28c": {
+        "name": "Game",
+        "address": "0xd120829bde6204f120047642dffa11637cda5d2d"
+      },
+      "0xadcf78c960a8f74957eb74b159b6b49ded93e638b641da52a5bf2ccae047c03f": {
+        "name": "Game",
+        "address": "0xc49faf6d19079191c27d06645733f64b853d43e0"
+      }
+    },
+    "name": "development"
+  },
+  "0xd0cc33cf5ae2c1bdef94c00dd7415c9b699b9bf9be6cac4247f7433b2bab72ad": {
+    "contracts": {
+      "0xadcf78c960a8f74957eb74b159b6b49ded93e638b641da52a5bf2ccae047c03f": {
+        "name": "Game",
+        "address": "0x8efb7ec757f34c2b9a8e025b1a49dd7da8356733"
+      }
+    },
+    "name": "development"
+  },
+  "0xfb573966083c63697a97f75425868e3f0fd9a361620f427d1d38a606c740fdc7": {
+    "contracts": {
+      "0xadcf78c960a8f74957eb74b159b6b49ded93e638b641da52a5bf2ccae047c03f": {
+        "name": "Game",
+        "address": "0x8097443f5c0c4d38d119786231e50dc6fd4d9943"
+      }
+    },
+    "name": "development"
+  },
+  "0xb2a2963dc3cab417337a6f3b75b71686aced9687a852c25cc75d30de181fbfd8": {
+    "contracts": {
+      "0xadcf78c960a8f74957eb74b159b6b49ded93e638b641da52a5bf2ccae047c03f": {
+        "name": "Game",
+        "address": "0x3b4674156d9d57f9d8c6615f34ce5ba2bf81fa56"
+      }
+    },
+    "name": "development"
   }
 }

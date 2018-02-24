@@ -20,7 +20,11 @@ var name = document.getElementById("name").value;
   {
     Game.methods.RegisterPlayer("ass",web3.eth.defaultAccount).call({from: web3.eth.defaultAccount,gas:3000000},function(err, value) {
       alert(value);
+    Game.methods.SetUpGame().call({from: web3.eth.defaultAccount,gas:3000000},function(err, value) {
+      alert(value);
+    });// Setup the game board etc..   
     });
+      
     //var results=Game.methods.RegisterPlayer("ass",web3.eth.defaultAccount).send({from: web3.eth.defaultAccount,gas:3000000});
    /* var game =Game.methods.RegisterPlayer("Test message",web3.eth.defaultAccount).call(function(code){
       console.info("Successfully Registerd User");
@@ -65,6 +69,9 @@ var name = document.getElementById("name").value;
       var Id=getId(event.target.id);
       var results=Game.methods.MakeMove(1,Id).call({from: web3.eth.defaultAccount,gas:3000000},function(err, value) {
         alert("MakeMove return value= "+value);
+        if(value =="Game hasnt been initialsied"){
+          
+        }
       });
       /*var turn =Game.methods.MakeMove(1,Id).call(function(code){
         console.info(code);
@@ -140,6 +147,7 @@ function getId(id){
 window.onload = function() {
   document.getElementById("MainUI").style.display = "none";
   document.getElementById("ChooseXorO").style.display = "none";
-  
  document.getElementById("overlay").style.display = "block";
+ addToLog("Player 1 Symboy" + playerSymbol);
+ addToLog("Player 2 Symboy" + enemySymbol);
 };

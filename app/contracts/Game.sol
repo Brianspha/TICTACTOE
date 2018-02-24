@@ -35,7 +35,6 @@ bool HasGameBeenSetUp = false;
 Player P1;
 Player P2;
 function RegisterPlayer(string name, address playerAddress) public  returns(string) {
-
 if (RegisterdPlayers[playerAddress].Registerd) {
 return "Player Already Registered";
 }
@@ -51,10 +50,8 @@ P2=Player(0,"AI", 0, arr1, true);
 PlayersWhoPlayed[playerAddress]=P2;
 RegisteredPlayerCount = 2;
 }
-SetUpGame();// Setup the game board etc..
 return "Registerd Player Successfully";
 }
-
 function SetUpGame() public returns(string) {
 
 if (HasGameBeenSetUp) return "Game Already SetUp";
@@ -105,7 +102,7 @@ return (RegisterdPlayers[ID].Name, RegisterdPlayers[ID].NoOfWins, RegisterdPlaye
 }
 
 function MakeMove(uint Pos, uint WhichPlayer) public  returns(string) {
-if (!HasGameBeenSetUp|| RegisteredPlayerCount ==0) {
+if (!HasGameBeenSetUp) {
 return "Game hasnt been initialsied";
 }
     if (WhichPlayer == 1) {
